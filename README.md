@@ -2,7 +2,7 @@
 
 A machine learning project focused on predicting criminal recidivism using various classification algorithms. This project analyzes offender data to predict the likelihood of reoffending, which can assist in criminal justice decision-making processes.
 
-## 📋 Table of Contents
+## Table of Contents
 - [Overview](#overview)
 - [Dataset](#dataset)
 - [Models Implemented](#models-implemented)
@@ -13,11 +13,11 @@ A machine learning project focused on predicting criminal recidivism using vario
 - [Contributing](#contributing)
 - [License](#license)
 
-## 🎯 Overview
+## Overview
 
 This project aims to predict whether an offender will recidivate (reoffend) using machine learning classification algorithms. The prediction model considers various features including demographics, criminal history, and other relevant factors to assess recidivism risk.
 
-## 📊 Dataset
+## Dataset
 
 The dataset includes offender information with the following key features:
 - **Demographics**: Age, gender, race
@@ -25,7 +25,7 @@ The dataset includes offender information with the following key features:
 - **Risk Factors**: Various behavioral and social indicators
 - **Target Variable**: Recidivism status (binary classification)
 
-## 🤖 Models Implemented
+## Models Implemented
 
 The following classification algorithms have been implemented and evaluated:
 
@@ -40,7 +40,7 @@ The following classification algorithms have been implemented and evaluated:
 9. **CatBoost**
 10. **LightGBM**
 
-## 📈 Results
+## Results
 
 ### Model Performance Overview
 
@@ -60,7 +60,7 @@ The models were evaluated using multiple metrics including accuracy, precision, 
 | XGBoost | 0.8466 | 0.8193 | 0.8924 | 0.8543 | 0.8456 |
 | CatBoost | 0.8430 | 0.8142 | 0.8919 | 0.8513 | 0.8419 |
 
-### 🏆 Top Performing Models
+### Top Performing Models
 
 #### 1. **SVM with RBF Kernel** (Best Overall)
 - **Accuracy**: 89.16%
@@ -86,7 +86,7 @@ The models were evaluated using multiple metrics including accuracy, precision, 
 - **Strengths**: Non-parametric approach, good for local patterns
 - **Use Case**: Effective when similar cases matter
 
-### 📊 Detailed Analysis
+### Detailed Analysis
 
 #### Precision-Recall Tradeoff
 
@@ -119,7 +119,7 @@ While **CatBoost** and **XGBoost** show lower overall accuracy (84.30% and 84.66
 - Early warning systems where you want maximum coverage
 - Initial screening that will be followed by additional assessment
 
-### 🔍 Key Insights
+### Key Insights
 
 1. **Balanced Performance**: SVM RBF achieves the best balance across all metrics, making it the most reliable all-around model.
 
@@ -134,7 +134,7 @@ While **CatBoost** and **XGBoost** show lower overall accuracy (84.30% and 84.66
 
 5. **Marginal Differences**: The top 6 models are within 5% accuracy of each other, suggesting that feature engineering and data quality may be as important as model selection.
 
-### 🎯 Real-World Application Considerations
+### Real-World Application Considerations
 
 In the **criminal justice domain**, model selection has significant implications:
 
@@ -146,7 +146,7 @@ In the **criminal justice domain**, model selection has significant implications
 
 **Recommendation**: Deploy **SVM RBF** or **Gradient Boosting** as primary models for their balanced performance, while maintaining **XGBoost/CatBoost** as sensitivity analysis tools to identify high-risk cases that might be missed by more conservative models.
 
-## 🚀 Installation
+## Installation
 
 ```bash
 # Clone the repository
@@ -157,20 +157,7 @@ cd classification
 pip install -r requirements.txt
 ```
 
-## 💻 Usage
-
-```python
-# Example usage
-from src.models import train_model, predict
-
-# Train a model
-model = train_model(model_type='svm_rbf', X_train, y_train)
-
-# Make predictions
-predictions = predict(model, X_test)
-```
-
-## 📁 Project Structure
+## Project Structure
 
 ```
 classification/
@@ -186,7 +173,7 @@ classification/
 └── README.md         # Project documentation
 ```
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
 
@@ -196,7 +183,7 @@ Contributions are welcome! Please feel free to submit a Pull Request. For major 
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
